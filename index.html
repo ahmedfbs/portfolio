@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mishkwaath Khan — Mishi</title>
+  <meta name="description" content="A little corner of the internet made just for her.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">Mishi<span>♡</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#reels">Reels</a>
+      <a href="#contact">For You</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__text">
+      <p class="eyebrow reveal">Model &nbsp;·&nbsp; Muse &nbsp;·&nbsp; My Favourite Person</p>
+      <h1 class="hero__title reveal">
+        <span>Mishkwaat</span>
+        <em>Khan</em>
+      </h1>
+      <p class="hero__lede reveal">Every picture of her is my favourite picture. So I made her a place to keep them — the poses, the smiles, and all the little moments in between.</p>
+      <div class="hero__cta reveal">
+        <a href="#portfolio" class="btn btn--solid">See Her Gallery</a>
+        <a href="#reels" class="btn btn--ghost">Watch Her Reels</a>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal">
+      <div class="frame frame--arch" data-label="Hero portrait">
+        <img src="images/hero.jpg" alt="Mishkwaath Khan" style="object-position: 45% 30%">
+      </div>
+      <div class="hero__badge">
+        <span class="hero__badge-star">✦</span>
+        <span>Made<br>with<br>love ♡</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Stunning</span><i>✦</i><span>Graceful</span><i>✦</i><span>Iconic</span><i>✦</i><span>Adorable</span><i>✦</i><span>One of a Kind</span><i>✦</i>
+      <span>Stunning</span><i>✦</i><span>Graceful</span><i>✦</i><span>Iconic</span><i>✦</i><span>Adorable</span><i>✦</i><span>One of a Kind</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="about__media reveal">
+      <div class="frame frame--tall" data-label="About portrait">
+        <img src="images/about.jpg" alt="Mishi">
+      </div>
+      <div class="frame frame--small" data-label="Detail shot">
+        <img src="images/about-2.jpg" alt="Jhumka detail">
+      </div>
+    </div>
+
+    <div class="about__body">
+      <p class="eyebrow reveal">01 — About Her</p>
+      <h2 class="section__title reveal">A face for <em>stories</em>,<br>a smile I’d know anywhere.</h2>
+      <p class="reveal">Write a few lines about her here — how you met, what makes her laugh, the little things only you notice. Keep it sweet, keep it short.</p>
+      <p class="reveal">Based in <strong>Your City</strong>. Natural in front of any camera, and somehow even better without one.</p>
+
+      <dl class="stats reveal">
+        <div><dt>Birthday</dt><dd>14 Feb</dd></div>
+        <div><dt>Star sign</dt><dd>Pisces</dd></div>
+        <div><dt>Fav colour</dt><dd>Blush</dd></div>
+        <div><dt>Fav flower</dt><dd>Peony</dd></div>
+        <div><dt>Smile</dt><dd>10/10</dd></div>
+        <div><dt>Cuteness</dt><dd>∞</dd></div>
+        <div><dt>My heart</dt><dd>Hers</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow reveal">02 — Portfolio</p>
+        <h2 class="section__title reveal">Her <em>Gallery</em></h2>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="is-active" data-filter="all">All</button>
+        <button data-filter="photo">Photos</button>
+        <button data-filter="video">Videos</button>
+      </div>
+    </div>
+
+    <div class="gallery" id="gallery"><!-- filled by script.js --></div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote">
+    <p class="quote__mark">“</p>
+    <blockquote class="reveal">Of all the pictures I’ve ever taken, you’re in every favourite one.</blockquote>
+    <p class="quote__by reveal">— Me, to you</p>
+  </section>
+
+  <!-- ============ REELS ============ -->
+  <section class="reels section" id="reels">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow reveal">03 — Motion</p>
+        <h2 class="section__title reveal">Her <em>Moments</em></h2>
+      </div>
+      <p class="section__note reveal"><span class="only-hover">Hover to play · </span>Tap to watch</p>
+    </div>
+    <div class="reels__row" id="reelsRow"><!-- filled by script.js --></div>
+  </section>
+
+  <!-- ============ FEATURED ============ -->
+  <section class="featured">
+    <p class="eyebrow">As seen in</p>
+    <div class="featured__list">
+      <span>My Camera Roll</span><span>My Lock Screen</span><span>Every Story</span><span>My Daydreams</span><span>My Heart</span>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <p class="eyebrow reveal">04 — For You</p>
+    <h2 class="contact__title reveal">You are my<br><em>favourite view.</em></h2>
+    <p class="contact__note reveal">Write her a little message here — why you made this, what she means to you, or just the thing you always say before you hang up.</p>
+    <p class="contact__sign reveal">— Love, Your Name</p>
+    <p class="eyebrow contact__follow reveal">Follow her</p>
+    <div class="contact__socials contact__socials--tight reveal">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">TikTok</a>
+      <a href="#" target="_blank" rel="noopener">YouTube</a>
+      <a href="#" target="_blank" rel="noopener">Pinterest</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Made with ♡ for Mishi · <span id="year"></span></span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure class="lightbox__stage" id="lbStage"></figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">›</button>
+    <p class="lightbox__caption" id="lbCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
